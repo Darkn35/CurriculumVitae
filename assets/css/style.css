@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;    
+    overflow-x: hidden;
+}
+
+.bodyInfo {
+    background-color: rgb(16, 98, 165);
+    color: rgba(245, 245, 245, 0.836);
+    font-family: 'Cabin', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.headerParallax {
+    background: url("../img/nightPark.png");
+    padding: 10%;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+}
+
+.headerInfo {
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.imgfloat1 {
+    border-radius: 50%;
+    height: 300px;
+    margin-left: 3vw;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+}
+
+.imgfloat2 {
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+	overflow: hidden;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+    margin-left: 3vw;
+    display: flex;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.aboutMe , .myProjects {
+    font-size: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: whitesmoke;
+}
+
+.whiteBG  {
+    background-color: white;
+}
+
+.myAchievements , .mySkills{
+    font-size: 3.5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: black;
+}
+
+.myAchievements ul , .mySkills ul{
+    list-style: none;
+}
+
+.myProjects a  {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.myProjects a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
